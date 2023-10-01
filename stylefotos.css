@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 150px;
+    height: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.photos-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.photo-1 {
+    width: 500px;
+    height: 400px;
+    background-image: url(https://i0.wp.com/otakusbrasil.com/wp-content/uploads/2021/10/bsjdWN0H0t9Pe7nPYoxXTHd8KpP.jpg?resize=798%2C448&ssl=1);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.photo-2 {
+    width: 500px;
+    height: 400px;
+    background-image: url(https://img1.ak.crunchyroll.com/i/spire3/aa121d8a23b412ca24be0f4a3aeeb08e1616173024_main.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.photo-3 {
+    width: 500px;
+    height: 400px;
+    background-image: url(https://www.animeunited.com.br/oomtumtu/2021/10/Kimetsu-No-Yaiba-Mugen-Train-1024x576-1.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.photo-4 {
+    width: 500px;
+    height: 400px;
+    background-image: url(https://vigilianerd.com.br/wp-content/uploads/2019/11/Kimetsu-no-Yaiba-Mugen-Ressha-Hen-filme-vigilia-nerd.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+footer {
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo2 {
+    width: 150px;
+    height: 50%;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .photos-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+        margin-top: 40px;
+    }
+
+}
